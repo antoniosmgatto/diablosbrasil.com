@@ -45,6 +45,10 @@ export default function Home() {
         <video className="fixed -z-10 w-screen h-auto" autoPlay muted loop>
           <source src="/diablos_intro.mp4" type="video/mp4" />
         </video>
+
+        <address>
+          Rua Capitão Tomas Carvalho de Camargo, 448 - Cidade Jardim, São José dos Pinhais, Paraná, 83035-440
+        </address>
       </main>
 
       <footer className="fixed left-0 bottom-0 w-screen h-2 flex justify-center p-4 text-white">
