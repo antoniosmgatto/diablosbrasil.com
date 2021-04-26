@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-black">
       <Head>
         <title>Diablos MC Brasil</title>
         <meta property="og:title" content="Diablos MC Brasil" />
@@ -46,6 +46,10 @@ export default function Home() {
           <source src="/diablos_intro.mp4" type="video/mp4" />
         </video>
       </main>
+
+      <footer className="fixed left-0 bottom-0 w-screen h-2 flex justify-center p-4 text-white">
+        <span>&copy; {new Date().getFullYear()} Diablos MC Brasil, Todos os direitos reservados</span>
+      </footer>
     </div>
   );
 }
