@@ -5,9 +5,15 @@ export default function Home() {
     <div>
       <Head>
         <title>Diablos MC Brasil</title>
+        <meta property="og:title" content="Diablos MC Brasil" />
+        <meta property="og:url" content="https://diablosbrasil.com" />
+        <meta
+          name="og:description"
+          content="Associação de motociclistas que buscam os verdadeiros ideais de liberdade e expressão, pelas longas estradas desse inferno."
+        />
         <meta
           name="description"
-          content="DIABLOS MC - Associação de motociclistas que buscam os verdadeiros ideais de liberdade e expressão, pelas longas estradas desse inferno."
+          content="Associação de motociclistas que buscam os verdadeiros ideais de liberdade e expressão, pelas longas estradas desse inferno."
         />
         <meta name="keywords" content="Diablos, Diablos MC, Motociclismo" />
         <meta name="author" content="Antonio Gatto" />
@@ -33,7 +39,6 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-
       </Head>
 
       <main>
