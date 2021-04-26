@@ -42,7 +42,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Diablos MC Brasil</h1>
+        <video className="fixed -z-10 w-screen h-auto" autoPlay muted loop>
+          <source src="/diablos_intro.mp4" type="video/mp4" />
+        </video>
       </main>
     </div>
   );
