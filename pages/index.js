@@ -12,6 +12,8 @@ export default function Home() {
         <meta name="keywords" content="Diablos, Diablos MC, Motociclismo" />
         <meta name="author" content="Antonio Gatto" />
 
+        <link rel="canonical" href="https://diablosbrasil.com" />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -31,6 +33,7 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+
       </Head>
 
       <main>
