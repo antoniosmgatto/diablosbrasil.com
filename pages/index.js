@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
+
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
 
@@ -34,7 +37,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black text-white">
       <Head>
         <title>Diablos MC Brasil</title>
         <meta property="og:title" content="Diablos MC Brasil" />
@@ -77,23 +80,57 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
+      <video
+        className="fixed left-0 bottom-0 -z-10 w-screen h-auto"
+        autoPlay
+        loop
+      >
+        <source src="/diablos_intro.mp4" type="video/mp4" />
+      </video>
+      <main className="container mx-auto"></main>
+      <footer className="fixed left-0 bottom-0 w-screen h-1/4">
+        <div className="container mx-auto h-full py-14 flex">
+          <div className="flex-1 flex items-end">
+            <address>
+              <p>Rua Capitão Tomas Carvalho de Camargo, 448</p>
+              <p>Cidade Jardim, São José dos Pinhais - PR, 83035-440</p>
+            </address>
+          </div>
+          <div className="flex flex-col justify-around">
+            <div className="text-right">
+              <a
+                href="https://www.facebook.com/diablosmcbrasil"
+                target="blank"
+                rel="nofollow"
+              >
+                <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
+              </a>
 
-      <main>
-        <video className="fixed -z-10 w-screen h-auto" autoPlay muted loop>
-          <source src="/diablos_intro.mp4" type="video/mp4" />
-        </video>
+              <a
+                href="https://www.instagram.com/diablosmcbrasil"
+                target="blank"
+                rel="nofollow"
+                className="ml-4"
+              >
+                <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
+              </a>
 
-        <address>
-          Rua Capitão Tomas Carvalho de Camargo, 448 - Cidade Jardim, São José
-          dos Pinhais, Paraná, 83035-440
-        </address>
-      </main>
+              <a
+                href="https://www.youtube.com/channel/UCLtesRXmcG3QM2u4jIuUw0w"
+                target="blank"
+                rel="nofollow"
+                className="ml-4"
+              >
+                <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
+              </a>
+            </div>
 
-      <footer className="fixed left-0 bottom-0 w-screen h-2 flex justify-center p-4 text-white">
-        <span>
-          &copy; {new Date().getFullYear()} Diablos MC Brasil, Todos os direitos
-          reservados
-        </span>
+            <div className="text-right">
+              &copy; {new Date().getFullYear()} Diablos MC Brasil. Todos os
+              direitos reservados.
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
