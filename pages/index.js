@@ -80,13 +80,6 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <video
-        className="fixed left-0 bottom-0 -z-10 w-screen h-auto"
-        autoPlay
-        loop
-      >
-        <source src="/diablos_intro.mp4" type="video/mp4" />
-      </video>
       <main className="container mx-auto"></main>
       <footer className="fixed left-0 bottom-0 w-screen h-1/4">
         <div className="container mx-auto h-full py-14 flex">
