@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="fixed left-0 bottom-0 w-screen h-1/4">
+      <footer className="w-full h-auto">
         <div className="container mx-auto h-full py-14 flex">
           <div className="flex-1 flex items-end">
             <address>
@@ -136,7 +136,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="text-right">
+            <div className="text-right pt-2">
               &copy; {new Date().getFullYear()} Diablos MC Brasil. Todos os
               direitos reservados.
             </div>
