@@ -80,11 +80,25 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
-      <main className="container mx-auto">
-        <div className="w-full h-screen flex justify-center items-center">
-          <img src="/diablos_logo.jpeg" alt="Diablos logo" className="h-1/2" />
+
+      <main>
+        <div className="relative w-full h-screen flex justify-center items-center overflow-hidden">
+          {/* <video
+            className="absolute right-0 bottom-0 min-w-full min-h-full"
+            autoPlay
+            loop
+          >
+            <source src="/diablos_intro.mp4" type="video/mp4" />
+          </video> */}
+
+          <img
+            src="/diablos_logo.jpeg"
+            alt="Diablos logo"
+            className="z-10 h-3/4"
+          />
         </div>
       </main>
+
       <footer className="fixed left-0 bottom-0 w-screen h-1/4">
         <div className="container mx-auto h-full py-14 flex">
           <div className="flex-1 flex items-end">
