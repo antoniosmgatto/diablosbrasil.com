@@ -151,48 +151,49 @@ export default function Home() {
         </section>
       </main>
 
-      <footer id="contact" className="w-full h-auto">
-        <div className="container mx-auto h-full py-14 flex">
-          <div className="flex-1 flex items-end">
+      <footer id="contact" className="w-full h-auto pt-20 pb-10">
+        <div className="text-center">
+          <h2 className="uppercase mb-10 text-3xl">Contato</h2>
+
+          <div>
             <address>
               <p>Rua Joaquim Nabuco, 18</p>
               <p>Cidade Jardim, São José dos Pinhais - PR, 83040-210</p>
             </address>
           </div>
-          <div className="flex flex-col justify-around">
-            <div className="text-right">
-              <a
-                href="https://www.facebook.com/diablosmcbrasil"
-                target="blank"
-                rel="nofollow"
-              >
-                <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
-              </a>
 
-              <a
-                href="https://www.instagram.com/diablosmcbrasil"
-                target="blank"
-                rel="nofollow"
-                className="ml-4"
-              >
-                <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
-              </a>
+          <div className="py-10">
+            <a
+              href="https://www.facebook.com/diablosmcbrasil"
+              target="blank"
+              rel="nofollow"
+            >
+              <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
+            </a>
 
-              <a
-                href="https://www.youtube.com/channel/UCLtesRXmcG3QM2u4jIuUw0w"
-                target="blank"
-                rel="nofollow"
-                className="ml-4"
-              >
-                <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
-              </a>
-            </div>
+            <a
+              href="https://www.instagram.com/diablosmcbrasil"
+              target="blank"
+              rel="nofollow"
+              className="ml-4"
+            >
+              <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
+            </a>
 
-            <div className="text-right pt-2">
-              &copy; {currentYear} Diablos MC Brasil. Todos os direitos
-              reservados.
-            </div>
+            <a
+              href="https://www.youtube.com/channel/UCLtesRXmcG3QM2u4jIuUw0w"
+              target="blank"
+              rel="nofollow"
+              className="ml-4"
+            >
+              <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
+            </a>
           </div>
+
+          <p>
+            &copy; {currentYear} Diablos MC Brasil. Todos os direitos
+            reservados.
+          </p>
         </div>
       </footer>
     </div>
