@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
+import { Gallery } from '../components';
 
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -103,50 +104,7 @@ export default function Home() {
           <div className="max-w-4xl">
             <h2 className="text-center uppercase mb-10">Fotos</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-              <div className="relative">
-                <img
-                  className=""
-                  src="/photos/diablos-1.jpeg"
-                  alt="Foto Diablos na Estrada"
-                />
-              </div>
-            </div>
+            <Gallery />
           </div>
         </section>
       </main>
