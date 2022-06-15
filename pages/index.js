@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
 
   const structuredData = {
     "@context": "http://www.schema.org",
@@ -224,7 +225,7 @@ export default function Home() {
             </div>
 
             <div className="text-right pt-2">
-              &copy; {new Date().getFullYear()} Diablos MC Brasil. Todos os
+              &copy; {currentYear} Diablos MC Brasil. Todos os
               direitos reservados.
             </div>
           </div>
