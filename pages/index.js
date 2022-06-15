@@ -155,8 +155,8 @@ export default function Home() {
         <div className="container mx-auto h-full py-14 flex">
           <div className="flex-1 flex items-end">
             <address>
-              <p>Rua Capitão Tomas Carvalho de Camargo, 448</p>
-              <p>Cidade Jardim, São José dos Pinhais - PR, 83035-440</p>
+              <p>Rua Joaquim Nabuco, 18</p>
+              <p>Cidade Jardim, São José dos Pinhais - PR, 83040-210</p>
             </address>
           </div>
           <div className="flex flex-col justify-around">
@@ -189,8 +189,8 @@ export default function Home() {
             </div>
 
             <div className="text-right pt-2">
-              &copy; {currentYear} Diablos MC Brasil. Todos os
-              direitos reservados.
+              &copy; {currentYear} Diablos MC Brasil. Todos os direitos
+              reservados.
             </div>
           </div>
         </div>
