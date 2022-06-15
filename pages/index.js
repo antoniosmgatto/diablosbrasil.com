@@ -79,27 +79,114 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Início</a>
+            </li>
+            <li>
+              <a href="#about">História</a>
+            </li>
+            <li>
+              <a href="#photos">Fotos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
       </Head>
 
       <main>
         <div className="relative w-full h-screen flex justify-center items-center overflow-hidden">
-          {/* <video
-            className="absolute right-0 bottom-0 min-w-full min-h-full"
-            autoPlay
-            loop
-          >
-            <source src="/diablos_intro.mp4" type="video/mp4" />
-          </video> */}
-
           <img
             src="/diablos_logo.jpeg"
             alt="Diablos logo"
             className="z-10 h-3/4"
           />
         </div>
+
+        <section
+          id="about"
+          className="relative w-full text-3xl font-medium flex justify-center items-center"
+        >
+          <div className="max-w-4xl leading-relaxed text-justify">
+            <h2 className="text-center uppercase mb-10">História</h2>
+
+            <p>
+              <strong>DIABLOS,</strong> termo geralmente utilizado para designar
+              a entidade excluída do céu.
+            </p>
+            <p className="py-10">
+              Muitas vezes, também, somos excluídos pela sociedade, por nossos
+              comportamentos, nossas idéias, pelo nosso visual e etc, que não
+              condizem com a moda atualmente imposta para o ser humano.
+            </p>
+            <p>
+              Este é o DIABLOS M.C., associação de motociclistas que buscam os
+              verdadeiros ideais de liberdade e expressão, pelas longas estradas
+              desse inferno.
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="photos"
+          className="relative w-full text-3xl font-medium flex justify-center items-center"
+        >
+          <div className="max-w-4xl">
+            <h2 className="text-center uppercase mb-10">Fotos</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+              <div className="relative">
+                <img
+                  className=""
+                  src="/photos/diablos-1.jpeg"
+                  alt="Foto Diablos na Estrada"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className="w-full h-auto">
+      <footer id="contact" className="w-full h-auto">
         <div className="container mx-auto h-full py-14 flex">
           <div className="flex-1 flex items-end">
             <address>
