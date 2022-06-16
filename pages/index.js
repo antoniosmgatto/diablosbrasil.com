@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
-import { Gallery } from '../components';
+import { Gallery, Header } from '../components';
 
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -45,32 +45,13 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Início</a>
-            </li>
-            <li>
-              <a href="#about">História</a>
-            </li>
-            <li>
-              <a href="#photos">Fotos</a>
-            </li>
-            <li>
-              <a href="#contact">Contato</a>
-            </li>
-          </ul>
-        </nav>
       </Head>
+
+      <Header />
 
       <main>
         <div className="relative w-full h-screen flex justify-center items-center overflow-hidden">
-          <img
-            src="/diablos_logo.jpeg"
-            alt="Diablos logo"
-            className="z-10 h-3/4"
-          />
+
         </div>
 
         <section

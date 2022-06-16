@@ -16,7 +16,9 @@
     "next": "12",
     "photoswipe": "^5.2.7",
     "react": "18.2",
-    "react-dom": "18.2"
+    "react-dom": "18.2",
+    "react-responsive": "^9.0.0-beta.10",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4",
