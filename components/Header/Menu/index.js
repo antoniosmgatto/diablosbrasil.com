@@ -6,7 +6,6 @@ import { useMediaQuery } from "react-responsive";
 const Menu = () => {
    const links = [
      { path: "#about", label: "História" },
-     { path: "#photos", label: "Fotos" },
      { path: "#contact", label: "Contato" },
    ];
 

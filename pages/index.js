@@ -77,17 +77,6 @@ export default function Home() {
             </p>
           </div>
         </section>
-
-        <section
-          id="photos"
-          className="relative w-full text-3xl font-medium flex justify-center items-center"
-        >
-          <div className="max-w-4xl">
-            <h2 className="text-center uppercase mb-10">Fotos</h2>
-
-            <Gallery />
-          </div>
-        </section>
       </main>
 
       <footer id="contact" className="w-full h-auto pt-20 pb-10">
