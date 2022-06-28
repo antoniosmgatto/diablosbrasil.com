@@ -28,15 +28,15 @@ const Mobile = (props) => {
   const handleMenuClick = () => setIsOpen(!isOpen);
 
   const animationClasses = {
-    appear: "opacity-20",
-    appearActive: "opacity-30",
-    appearDone: "opacity-40",
+    appear: "opacity-10",
+    appearActive: "opacity-20",
+    appearDone: "opacity-25",
     enter: "opacity-50",
-    enterActive: "opacity-60",
-    enterDone: "opacity-85",
-    exit: "opacity-50",
-    exitActive: "opacity-30",
-    exitDone: "opacity-0",
+    enterActive: "opacity-75",
+    enterDone: "opacity-80",
+    exit: "opacity-75",
+    exitActive: "opacity-50",
+    exitDone: "opacity-25",
   };
 
   return (
@@ -51,7 +51,7 @@ const Mobile = (props) => {
         classNames={animationClasses}
         unmountOnExit
       >
-        <div className="w-screen h-screen fixed top-0 right-0 bg-black flex flex-col space-around px-8 pt-6 transition-opacity ease-in">
+        <div className="w-screen h-screen fixed top-0 right-0 bg-black flex flex-col space-around px-8 pt-6 transition-opacity ease-in-out duration-300">
           <header className="w-100 mb-10 flex justify-end">
             <button onClick={handleMenuClick}>
               <FontAwesomeIcon icon={faXmark} color="white" size="2x" />
