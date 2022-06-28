@@ -51,7 +51,7 @@ const Mobile = (props) => {
         classNames={animationClasses}
         unmountOnExit
       >
-        <div className="w-screen h-screen fixed top-0 right-0 bg-black flex flex-col space-around pl-12 pr-8 pt-6 transition-opacity ease-in">
+        <div className="w-screen h-screen fixed top-0 right-0 bg-black flex flex-col space-around px-8 pt-6 transition-opacity ease-in">
           <header className="w-100 mb-10 flex justify-end">
             <button onClick={handleMenuClick}>
               <FontAwesomeIcon icon={faXmark} color="white" size="2x" />
