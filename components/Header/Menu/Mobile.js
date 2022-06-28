@@ -66,7 +66,7 @@ const Mobile = (props) => {
             ))}
           </ul>
 
-          <div className="text-xl text-center mb-10">4.13.3</div>
+          <div className="text-xl text-center pb-24">4.13.3</div>
         </div>
       </CSSTransition>
     </div>
