@@ -37,12 +37,6 @@ const Mobile = (props) => {
       >
         <div className="h-screen w-screen fixed top-0 right-0 bg-white pl-12 pr-8 py-8">
           <header className="w-100 flex justify-between mb-10">
-            <div className="w-48">
-              <a href="#">
-                <img src="/diablos_logo_topo.png" alt="Diablos MC Brasil" />
-              </a>
-            </div>
-
             <button onClick={handleMenuClick}>
               <FontAwesomeIcon icon={faXmark} color="black" size="2x" />
             </button>
