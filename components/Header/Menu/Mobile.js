@@ -41,7 +41,7 @@ const Mobile = (props) => {
 
   return (
     <div>
-      <button onClick={handleMenuClick}>
+      <button className="w-8" onClick={handleMenuClick}>
         <FontAwesomeIcon icon={faBars} color="white" size="2x" />
       </button>
 
@@ -53,7 +53,7 @@ const Mobile = (props) => {
       >
         <div className="w-screen h-screen fixed top-0 right-0 bg-black flex flex-col space-around px-8 pt-6 transition-opacity ease-in-out duration-300">
           <header className="w-100 mb-10 flex justify-end">
-            <button onClick={handleMenuClick}>
+            <button className="w-8 rounded-lg" onClick={handleMenuClick}>
               <FontAwesomeIcon icon={faXmark} color="white" size="2x" />
             </button>
           </header>
