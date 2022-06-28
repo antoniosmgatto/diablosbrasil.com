@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "old-stamper": ["old_stamperregular", "arial", "sans-serif"],
+      },
       zIndex: {
         "-10": "-10",
       },

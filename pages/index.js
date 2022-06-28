@@ -45,13 +45,15 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
+
+        <link href="./fonts/old-stamper.regular-webfont.css" rel="stylesheet" />
       </Head>
 
       <Header />
 
       <main>
         <div className="relative w-full h-screen flex flex-col">
-          <div className='grow flex flex-col justify-center items-center'>
+          <div className="grow flex flex-col justify-center items-center">
             <img
               src="./diablos_logo.png"
               className="object-cover w-64 h-64"
