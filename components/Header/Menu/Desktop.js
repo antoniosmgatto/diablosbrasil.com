@@ -5,9 +5,9 @@ const Link = (props) => {
   const { path, label } = props;
 
   return (
-    <li className="mr-6">
+    <li className="font-old-stamper text-white text-2xl mr-6">
       <a
-        className="text-white text-lg focus:cursor-auto hover:opacity-90 hover:text-gray-100"
+        className="focus:cursor-auto hover:opacity-90 hover:text-gray-100"
         href={path}
       >
         {label}
