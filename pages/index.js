@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head'
-import { Gallery, Header } from '../components';
+import { Header } from '../components';
 
 import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
@@ -106,49 +106,59 @@ export default function Home() {
         </section>
       </main>
 
-      <footer id="contact" className="w-full h-auto pt-20 pb-10">
-        <div className="text-center">
-          <h2 className="uppercase mb-10 text-3xl">Contato</h2>
+      <footer
+        id="contact"
+        className="w-full h-screen bg-[url('/photos/diablos_mc_estrada_5.jpg')] bg-top bg-cover bg-no-repeat flex flex-col justify-between text-center p-5 lg:px-20 lg:py-10"
+      >
+        <div>
+          <h4 className="uppercase font-old-stamper text-3xl">Sede</h4>
 
-          <div>
-            <address>
-              <p>Rua Joaquim Nabuco, 18</p>
-              <p>Cidade Jardim, São José dos Pinhais - PR, 83040-210</p>
-            </address>
-          </div>
+          <address className="text-xl mt-6">
+            <div>Rua Joaquim Nabuco, 18</div>
+            <div>Cidade Jardim, São José dos Pinhais - PR</div>
+            <div>83040-210</div>
+          </address>
+        </div>
 
-          <div className="py-10">
-            <a
-              href="https://www.facebook.com/diablosmcbrasil"
-              target="blank"
-              rel="nofollow"
-            >
-              <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
-            </a>
+        <div className="flex flex-col items-center lg:flex-row-reverse lg:justify-between">
+          <ul className="flex justify-between w-40">
+            <li>
+              <a
+                href="https://www.facebook.com/diablosmcbrasil"
+                target="blank"
+                rel="nofollow"
+              >
+                <FontAwesomeIcon icon={faFacebook} color="white" size="2x" />
+              </a>
+            </li>
 
-            <a
-              href="https://www.instagram.com/diablosmcbrasil"
-              target="blank"
-              rel="nofollow"
-              className="ml-4"
-            >
-              <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
-            </a>
+            <li>
+              <a
+                href="https://www.instagram.com/diablosmcbrasil"
+                target="blank"
+                rel="nofollow"
+                className="ml-4"
+              >
+                <FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
+              </a>
+            </li>
 
-            <a
-              href="https://www.youtube.com/channel/UCLtesRXmcG3QM2u4jIuUw0w"
-              target="blank"
-              rel="nofollow"
-              className="ml-4"
-            >
-              <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
-            </a>
-          </div>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCLtesRXmcG3QM2u4jIuUw0w"
+                target="blank"
+                rel="nofollow"
+                className="ml-4"
+              >
+                <FontAwesomeIcon icon={faYoutube} color="white" size="2x" />
+              </a>
+            </li>
+          </ul>
 
-          <p>
+          <div className="mt-10 lg:mt-0">
             &copy; {currentYear} Diablos MC Brasil. Todos os direitos
             reservados.
-          </p>
+          </div>
         </div>
       </footer>
     </div>
