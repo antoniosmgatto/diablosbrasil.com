@@ -72,7 +72,7 @@ export default function Home() {
               alt="Diablos MC Brasil Logo"
             />
 
-            <h1 className="text-5xl mt-10">Diablos MC Brasil</h1>
+            <h1 className="text-5xl lg:text-6xl mt-10">Diablos MC Brasil</h1>
           </div>
 
           <div>
