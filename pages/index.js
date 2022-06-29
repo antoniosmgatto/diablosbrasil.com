@@ -51,17 +51,34 @@ export default function Home() {
 
       <Header />
 
+      <video
+        className="absolute top-0 left-0 object-cover w-full h-full"
+        autoPlay
+        muted
+        loop
+        preload="auto"
+        playsInline
+        poster
+      >
+        <source src="./background_video.mp4" type="video/mp4" />
+      </video>
+
       <main>
-        <div className="relative w-full h-screen flex flex-col">
-          <div className="grow flex flex-col justify-center items-center">
+        <div className="relative w-full h-screen flex flex-col justify-around text-center">
+          <div className='flex flex-col items-center'>
             <img
               src="./diablos_logo.png"
-              className="object-cover w-64 h-64"
+              className="object-cover h-64 lg:h-96"
               alt="Diablos MC Brasil Logo"
             />
-            <h1 className="text-5xl mt-10 text-center">Diablos MC Brasil</h1>
+
+            <h1 className="text-5xl mt-10">Diablos MC Brasil</h1>
           </div>
-          <h4 className="text-xl text-center pb-24">O inferno é fogo</h4>
+
+          <div>
+            <h3 className="text-2xl">Sanjo Originals</h3>
+            <h5 className="text-lg lg:mt-4">4.13.3</h5>
+          </div>
         </div>
 
         <section
