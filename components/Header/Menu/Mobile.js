@@ -65,8 +65,6 @@ const Mobile = (props) => {
               <Link key={link.label} {...link} onClick={handleMenuClick} />
             ))}
           </ul>
-
-          <div className="text-xl text-center pb-24">4.13.3</div>
         </div>
       </CSSTransition>
     </div>
