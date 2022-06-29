@@ -64,11 +64,11 @@ export default function Home() {
       </video>
 
       <main>
-        <div className="relative w-full h-screen flex flex-col justify-around text-center">
-          <div className='flex flex-col items-center'>
+        <div className="relative w-full h-screen flex flex-col justify-around text-center font-old-stamper">
+          <div className="flex flex-col items-center">
             <img
               src="./diablos_logo.png"
-              className="object-cover h-64 lg:h-96"
+              className="object-cover h-72 lg:h-96"
               alt="Diablos MC Brasil Logo"
             />
 
