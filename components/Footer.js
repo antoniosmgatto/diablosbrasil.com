@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="w-full h-screen bg-[url('/photos/diablos_mc_estrada_5.jpg')] bg-top bg-cover bg-no-repeat flex flex-col justify-between text-center p-5 lg:px-20 lg:py-10"
+      className="w-full h-screen bg-[url('/photos/diablos_mc_estrada_5.jpeg')] bg-top bg-cover bg-no-repeat flex flex-col justify-between text-center p-5 lg:px-20 lg:py-10"
     >
       <div>
         <h4 className="uppercase font-old-stamper text-3xl">Sede</h4>
