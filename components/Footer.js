@@ -19,7 +19,7 @@ const Footer = () => {
 
         <address className="text-xl mt-6">
           <div>Rua Joaquim Nabuco, 18</div>
-          <div>Cidade Jardim, São José dos Pinhais - PR</div>
+          <div>São José dos Pinhais - PR</div>
           <div>83040-210</div>
         </address>
       </div>
