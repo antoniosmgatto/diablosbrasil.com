@@ -2,16 +2,12 @@ import React from "react"
 
 const HomeSection = () => {
   return (
-    <div className="relative w-full h-screen flex flex-col justify-around text-center font-old-stamper">
-      <div className="flex flex-col items-center">
-        <img
-          src="./diablos_logo.png"
-          className="object-cover h-72 lg:h-96"
-          alt="Diablos MC Brasil Logo"
-        />
-
-        <h1 className="text-5xl lg:text-6xl mt-10">Diablos MC Brasil</h1>
-      </div>
+    <div className="relative w-full h-screen flex flex-col justify-around items-center text-center font-old-stamper">
+      <img
+        src="escudo_transparente_branco.png"
+        className="object-cover px-8 lg:w-2/6"
+        alt="Diablos MC Brasil Logo"
+      />
 
       <div>
         <h3 className="text-2xl">Sanjo Originals</h3>
