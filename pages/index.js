@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { About, Footer, Header } from '../components';
+import { About, BackgroundVideo, Footer, Header } from '../components';
 
 export default function Home() {
 
@@ -47,16 +47,7 @@ export default function Home() {
 
       <Header />
 
-      <video
-        className="absolute top-0 left-0 object-cover w-full h-full"
-        autoPlay
-        muted
-        loop
-        preload="auto"
-        playsInline
-      >
-        <source src="./background_video.mp4" type="video/mp4" />
-      </video>
+      <BackgroundVideo />
 
       <main>
         <div className="relative w-full h-screen flex flex-col justify-around text-center font-old-stamper">
