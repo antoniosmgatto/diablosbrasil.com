@@ -25,10 +25,6 @@ AboutSection.propTypes = {
   children: PropTypes.node,
 };
 
-AboutSection.defaultProps = {
-  bgPosition: "center"
-}
-
 const About = () => {
   return (
     <section id="about" className="w-full h-auto">
@@ -37,6 +33,7 @@ const About = () => {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/photos/diablosmc-estrada-1.jpeg')",
         }}
+        bgPosition="center"
       >
         <strong>DIABLOS</strong>,<br /> termo geralmente utilizado para designar
         a entidade excluída do céu.
@@ -47,7 +44,7 @@ const About = () => {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/photos/diablosmc-estrada-2.jpeg')",
         }}
-        bgPosition="bottom"
+        bgPosition="center"
       >
         Muitas vezes, também, somos excluídos pela sociedade, por nossos
         comportamentos, nossas idéias, pelo nosso visual e etc, que não condizem
