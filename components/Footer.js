@@ -5,6 +5,7 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import SectionTitle from "./SectionTitle";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +16,7 @@ const Footer = () => {
       className="w-full h-screen bg-[url('/photos/diablos_mc_estrada_5.jpeg')] bg-bottom bg-cover bg-no-repeat flex flex-col justify-between text-center p-5 lg:px-20 lg:py-10"
     >
       <div>
-        <h4 className="uppercase font-old-stamper text-3xl">Sede</h4>
+        <SectionTitle title="Sede" />
 
         <address className="text-xl mt-6">
           <div>Rua Joaquim Nabuco, 18</div>
