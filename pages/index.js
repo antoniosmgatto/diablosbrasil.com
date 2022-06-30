@@ -54,7 +54,6 @@ export default function Home() {
         loop
         preload="auto"
         playsInline
-        poster
       >
         <source src="./background_video.mp4" type="video/mp4" />
       </video>
