@@ -1,31 +1,72 @@
-import React from 'react'
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+
+const AboutSection = (props) => {
+  const { className, style, bgPosition, children } = props;
+
+  const cssRules = [
+    "w-full h-screen flex justify-center items-center p-5 lg:px-20 lg:py-10",
+    `bg-${bgPosition} bg-cover bg-no-repeat`,
+    className,
+  ];
+
+  return (
+    <div className={classNames(cssRules)} style={style}>
+      <p className="text-center text-2xl leading-loose lg:w-8/12">{children}</p>
+    </div>
+  );
+};
+
+AboutSection.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object,
+  bgPosition: PropTypes.oneOf(["top", "center", "bottom"]),
+  children: PropTypes.node,
+};
+
+AboutSection.defaultProps = {
+  bgPosition: "top"
+}
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="relative w-full text-3xl font-medium flex justify-center items-center"
-    >
-      <div className="max-w-4xl leading-relaxed text-justify">
-        <h2 className="text-center uppercase mb-10">História</h2>
+    <section id="about" className="w-full h-auto">
+      <AboutSection
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/photos/diablosmc-estrada-1.jpeg')",
+        }}
+      >
+        <strong>DIABLOS</strong>,<br /> termo geralmente utilizado para designar
+        a entidade excluída do céu.
+      </AboutSection>
 
-        <p>
-          <strong>DIABLOS,</strong> termo geralmente utilizado para designar a
-          entidade excluída do céu.
-        </p>
-        <p className="py-10">
-          Muitas vezes, também, somos excluídos pela sociedade, por nossos
-          comportamentos, nossas idéias, pelo nosso visual e etc, que não
-          condizem com a moda atualmente imposta para o ser humano.
-        </p>
-        <p>
-          Este é o DIABLOS M.C., associação de motociclistas que buscam os
-          verdadeiros ideais de liberdade e expressão, pelas longas estradas
-          desse inferno.
-        </p>
-      </div>
+      <AboutSection
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/photos/diablosmc-estrada-2.jpeg')",
+        }}
+        bgPosition="bottom"
+      >
+        Muitas vezes, também, somos excluídos pela sociedade, por nossos
+        comportamentos, nossas idéias, pelo nosso visual e etc, que não condizem
+        com a moda atualmente imposta para o ser humano. inferno.
+      </AboutSection>
+
+      <AboutSection
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/photos/diablosmc-estrada-3.jpeg')",
+        }}
+        bgPosition="center"
+      >
+        Este é o <strong>DIABLOS MC</strong>. <br />
+        Associação de motociclistas que buscam os verdadeiros ideais de
+        liberdade e expressão, pelas longas estradas desse inferno.
+      </AboutSection>
     </section>
   );
-}
+};
 
-export default About
+export default About;
