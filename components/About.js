@@ -3,11 +3,10 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 const AboutSection = (props) => {
-  const { className, style, bgPosition, children } = props;
+  const { className, style, children } = props;
 
   const cssRules = [
     "w-full h-screen flex justify-center items-center p-5 lg:px-20 lg:py-10",
-    `bg-${bgPosition} bg-cover bg-no-repeat`,
     className,
   ];
 
@@ -33,7 +32,7 @@ const About = () => {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/photos/diablosmc-estrada-1.jpeg')",
         }}
-        bgPosition="center"
+        className="bg-center bg-cover bg-no-repeat"
       >
         <strong>DIABLOS</strong>,<br /> termo geralmente utilizado para designar
         a entidade excluída do céu.
@@ -44,7 +43,7 @@ const About = () => {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/photos/diablosmc-estrada-2.jpeg')",
         }}
-        bgPosition="center"
+        className="bg-bottom bg-cover bg-no-repeat"
       >
         Muitas vezes, também, somos excluídos pela sociedade, por nossos
         comportamentos, nossas idéias, pelo nosso visual e etc, que não condizem
@@ -56,7 +55,7 @@ const About = () => {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/photos/diablosmc-estrada-3.jpeg')",
         }}
-        bgPosition="center"
+        className="bg-center bg-cover bg-no-repeat"
       >
         Este é o <strong>DIABLOS MC</strong>. <br />
         Associação de motociclistas que buscam os verdadeiros ideais de
