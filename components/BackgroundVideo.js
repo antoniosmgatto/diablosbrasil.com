@@ -10,6 +10,7 @@ const BackgroundVideo = () => {
         preload="auto"
         playsInline
       >
+        <source src="./background_video.webm" type="video/webm" />
         <source src="./background_video.mp4" type="video/mp4" />
       </video>
     );
