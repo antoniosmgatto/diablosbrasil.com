@@ -26,7 +26,7 @@ AboutSection.propTypes = {
 };
 
 AboutSection.defaultProps = {
-  bgPosition: "top"
+  bgPosition: "center"
 }
 
 const About = () => {
